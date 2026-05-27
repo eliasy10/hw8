@@ -58,9 +58,6 @@ VertexList Graph::edges_from(Vertex vertex) const
     {
         if (e.u == vertex)
             neighbors.push_back(e.v);
-
-        else if (e.v == vertex)
-            neighbors.push_back(e.u);
     }
 
     return neighbors;
